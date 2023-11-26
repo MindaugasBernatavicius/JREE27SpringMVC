@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p span {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <p>Hello <span th:text="${ew}"></span>!</p>
+    name_in_vi
+    <p><span th:text="${var1} + ' ' + ${sign} + ' ' + ${var2} + '=' + ${res}"></span></p>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
